@@ -1,5 +1,13 @@
 function singleNumber(nums) {
   // Start coding here
+  let numCount = [];
+  for (const num of nums) {
+    if (numCount[num]) {
+      numCount[num]++;
+    } else {
+      numCount[num] = 1;
+    }
+  }
 }
 
 let result1 = singleNumber([2, 2, 1]);
